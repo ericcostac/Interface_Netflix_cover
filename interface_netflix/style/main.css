@@ -12,6 +12,7 @@
 body{
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container{
@@ -36,5 +37,23 @@ header nav a{
 /* Efeito que ao massar o mouse no menu, muda de cor*/
 header nav a:hover{
     color: #fff;
+}
+
+/* ELEMENTOS POSTER PRINCIPAL*/
+.filme_principal{
+    font-size: 15px;
+    background: linear-gradient(rgba(0, 0, 0,.50), rgba(0, 0, 0,.50)100%), url('/interface_netflix/img/aranha_fundo.jpg');/*Escurecer fundo da imagem*/
+    height:400px;/*Tamanho da caixa para que a imagem caiba dentro da div*/
+    background-size:cover;/*Redimencionar a area de cobertura da caixa da imagem*/
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme_principal .descricao{
+    margin-bottom: 40px;
 }
 

@@ -2,18 +2,38 @@
     --vermelho: #E50914;
     --preta: #141414;
 }
-
+/* Formatação inicial padronizada*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Corpo da Tela*/
 body{
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
 }
 
 header .container{
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Criador de espaço entre elementos*/
+    
+}
+/*Chamada da div que foi declarada no html*/
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+/* Chamada da div nav e seus elementos para a configuração*/
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+/* Efeito que ao massar o mouse no menu, muda de cor*/
+header nav a:hover{
+    color: #fff;
 }
